@@ -1,0 +1,17 @@
+{
+  "name": "apac-uploader",
+  "version": "0.1.0",
+  "description": "Cloudflare Worker + Durable Object that relays a file from a source URL into a presigned PUT, running from an edge region close to the target to beat slow cross-region uploads.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250311.0",
+    "typescript": "^5.7.3",
+    "wrangler": "^4.19.0"
+  }
+}
